@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Riafy Movie Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js" defer></script>
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Movie App</div>
+                <div class="user-info">
+                    Welcome, <span id="username">User</span>! 
+                    <button id="logout-btn" class="btn btn-outline">Logout</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Search Movies</h2>
+            
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" placeholder="Enter movie title..." required>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+            
+            <div id="search-results" class="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </section>
+        
+        <section class="favorites-section">
+            <h2>Your Favorite Movies</h2>
+            <div id="favorites-list" class="favorites-container">
+                <!-- Favorites will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Riafy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

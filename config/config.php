@@ -15,7 +15,7 @@ if (!isset($_SESSION['initialized'])) {
 }
 
 // Application URL - change this to your domain when deploying
-define('BASE_URL', 'http://localhost/Riafy'); // Updated to match the local project path
+define('BASE_URL', 'http://localhost/riafy'); // Updated to match the local project path
 
 // OMDB API Config
 define('OMDB_API_KEY', '2e25f567'); // API key provided by user

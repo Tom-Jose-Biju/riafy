@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riafy Application</title>
+    <title>Riafy - Movie Application</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to Riafy!</h1>
-    <p>This is your application homepage.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+                <li><a href="https://github.com/Tom-Jose-Biju/riafy" target="_blank">GitHub Repository</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Riafy!</h1>
+            <p>Your go-to application for discovering movies.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Riafy is an application that allows you to search for and discover movies. You can find details about your favorite films, including ratings, summaries, and more.</p>
+        </section>
+        <section id="movies">
+            <h2>Movies</h2>
+            <div id="movie-list">
+                <!-- Movie items will be dynamically inserted here -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or feedback, feel free to reach out!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <?= date('Y') ?> Riafy. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html> 
